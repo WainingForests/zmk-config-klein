@@ -36,7 +36,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3)                                 RC(3,6) RC(3,7) 
 
 		diode-direction = "row2col";
         row-gpios
-            = <&xiao_d 0 GPIO_ACTIVE_HIGH>
+            = <&gpio1 0 GPIO_ACTIVE_HIGH>
             , <&xiao_d 1 GPIO_ACTIVE_HIGH>
             , <&xiao_d 2 GPIO_ACTIVE_HIGH>
             , <&xiao_d 3 GPIO_ACTIVE_HIGH>
@@ -64,7 +64,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3)                                 RC(3,6) RC(3,7) 
         compatible = "cirque,pinnacle";
         reg = <0x2a>;
         status = "disabled";
-        dr-gpios = <&gpio0 9 (GPIO_ACTIVE_HIGH)>;
+        dr-gpios = <&xiao_d 0 (GPIO_ACTIVE_HIGH)>;
 
         sensitivity = "4x";
         // sleep;
